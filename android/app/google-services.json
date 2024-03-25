@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "124605377629",
+    "project_id": "linen-republic",
+    "storage_bucket": "linen-republic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124605377629:android:3c00a44209ca450099b1b4",
+        "android_client_info": {
+          "package_name": "com.app.linen_republic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124605377629-obamhj4k248pfdikj0v82hoapfim9ork.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.linen_republic",
+            "certificate_hash": "e8a3f91fe8ab03f7b3dcf61e905d0fbe5d395bf8"
+          }
+        },
+        {
+          "client_id": "124605377629-kh2dqapl9qu0tk2sqv4vfduvoa158reg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-g91RY4pjC3LQyAOPo9fLjibS83gSTuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124605377629-kh2dqapl9qu0tk2sqv4vfduvoa158reg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124605377629-58p2sasoh9j56nhe9r8t9jup851vpcb1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.linenRepublicAdmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124605377629:android:d437fcb73e2d3b9e99b1b4",
+        "android_client_info": {
+          "package_name": "com.app.linen_republic_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124605377629-kh2dqapl9qu0tk2sqv4vfduvoa158reg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-g91RY4pjC3LQyAOPo9fLjibS83gSTuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124605377629-kh2dqapl9qu0tk2sqv4vfduvoa158reg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124605377629-58p2sasoh9j56nhe9r8t9jup851vpcb1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.linenRepublicAdmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
