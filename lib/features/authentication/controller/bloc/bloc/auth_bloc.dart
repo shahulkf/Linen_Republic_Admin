@@ -1,5 +1,6 @@
 import 'dart:async';
 
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:linen_republic_admin/features/authentication/controller/repository/admin_services.dart';
@@ -9,6 +10,8 @@ part 'auth_event.dart';
 part 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
+  final TextEditingController adminEmailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   final AdminAuthenticationServices authenticationServices;
   AuthBloc(this.authenticationServices) : super(AuthInitial()) {
     on<LoginclickedEvent>(_loginclickedEvent);

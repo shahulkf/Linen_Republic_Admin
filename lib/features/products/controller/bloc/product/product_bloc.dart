@@ -32,5 +32,20 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
       }
       emit(ImageSelectedState(images: imagess));
     });
+    on<DeleteProductEvent>((event, emit) async {
+      final response = await productRepo.deleteProduct(id: event.id);
+      response.fold((l) => emit(DeleteErrorState(message: l)),
+          (r) => emit(DeleteSuccessState(message: r)));
+    });
+    on<SelectDefaultImageEvent>((event, emit) async {
+      await Future.delayed(const Duration(seconds: 1));
+      emit(ImageSelectedState(images: event.images));
+    });
+    on<UpdateProductEvent>((event, emit) async {
+      final response =
+          await productRepo.editProduct(productModel: event.product);
+      response.fold((l) => emit(UpdateErrorState(message: l)),
+          (r) => emit(UpdateErrorState(message: r)));
+    });
   }
 }

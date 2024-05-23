@@ -28,6 +28,9 @@ class AdminAuthenticationServices implements AdminAuthRepo {
         default:
           return left('An error occurred. Please try again later.');
       }
+    } catch (e) {
+      // print(e.toString());
+      rethrow;
     }
   }
 }

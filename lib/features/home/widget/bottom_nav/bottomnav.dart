@@ -19,9 +19,9 @@ class BottomNav extends StatelessWidget {
       },
       items: [
         BottomBarItem(iconData: CupertinoIcons.home, label: 'Home'),
-        BottomBarItem(iconData: CupertinoIcons.percent, label: 'Coupons'),
+        BottomBarItem(iconData: CupertinoIcons.search, label: 'Search'),
+        BottomBarItem(iconData: CupertinoIcons.gift, label: 'Orders'),
         BottomBarItem(iconData: CupertinoIcons.add, label: 'Product'),
-        BottomBarItem(iconData: CupertinoIcons.person_3_fill, label: 'Users')
       ],
     );
   }

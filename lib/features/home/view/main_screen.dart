@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:linen_republic_admin/features/coupons/view/coupons.dart';
+import 'package:linen_republic_admin/features/orders/view/orders.dart';
 import 'package:linen_republic_admin/features/products/view/products.dart';
-import 'package:linen_republic_admin/features/user/view/user.dart';
+import 'package:linen_republic_admin/features/search/view/search.dart';
 import 'package:linen_republic_admin/features/home/view/home_page.dart';
 import 'package:linen_republic_admin/features/home/widget/bottom_nav/bottomnav.dart';
 
@@ -9,9 +9,9 @@ class MainPage extends StatelessWidget {
   MainPage({super.key});
   final List _pages = [
     const HomeScreen(),
-    const CouponsScreen(),
-    ProductsScreen(),
-    const UserScreen()
+    const SearchScreen(),
+    const OrdersScreen(),
+    const ProductsScreen(),
   ];
 
   @override

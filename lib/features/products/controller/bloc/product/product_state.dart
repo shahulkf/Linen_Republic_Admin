@@ -32,3 +32,27 @@ class ImageSelectedState extends ProductState {
   List<String> images;
   ImageSelectedState({required this.images});
 }
+
+class DeleteSuccessState extends ProductState {
+  final String message;
+
+  DeleteSuccessState({required this.message});
+}
+
+class DeleteErrorState extends ProductState {
+  final String message;
+
+  DeleteErrorState({required this.message});
+}
+
+class UpdateSuccessState extends ProductState{
+  final String message;
+
+  UpdateSuccessState({required this.message});
+}
+
+class UpdateErrorState extends ProductState{
+  final String message;
+
+  UpdateErrorState({required this.message});
+}

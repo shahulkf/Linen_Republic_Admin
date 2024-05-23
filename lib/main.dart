@@ -4,8 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:linen_republic_admin/features/authentication/controller/bloc/bloc/auth_bloc.dart';
 import 'package:linen_republic_admin/features/authentication/controller/repository/admin_services.dart';
 import 'package:linen_republic_admin/features/authentication/view/admin/admin_login.dart';
+import 'package:linen_republic_admin/features/orders/controller/orders/orders_bloc.dart';
+import 'package:linen_republic_admin/features/orders/controller/services/order_services.dart';
 import 'package:linen_republic_admin/features/products/controller/bloc/product/product_bloc.dart';
 import 'package:linen_republic_admin/features/products/controller/repository/productservice.dart';
+import 'package:linen_republic_admin/features/search/controller/bloc/search_bloc.dart';
+import 'package:linen_republic_admin/utils/responsive/responsive.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -22,6 +26,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Responsive.initScreenSize(context);
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -29,7 +34,13 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => ProductBloc(ProductAddServices()),
-        )
+        ),
+        BlocProvider(
+          create: (context) => OrdersBloc(OrderServices()),
+        ),
+        BlocProvider(
+          create: (context) => SearchBloc(ProductAddServices()),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -38,7 +49,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: true,
         ),
-        home: AdminLogin(),
+        home: const AdminLogin(),
       ),
     );
   }

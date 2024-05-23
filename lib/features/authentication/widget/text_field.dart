@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:linen_republic_admin/utils/validation/validation.dart';
 
 class TextFieldWidget extends StatelessWidget {
   const TextFieldWidget({
@@ -18,6 +19,12 @@ class TextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (value) {
+        if (value!.isEmpty) {
+          return fieldIsEmpty(_controller, context);
+        }
+        return null;
+      },
       obscureText: obscureText,
       controller: _controller,
       decoration: InputDecoration(

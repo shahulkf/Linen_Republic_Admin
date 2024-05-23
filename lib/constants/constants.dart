@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const height10 = SizedBox(
   height: 10,
@@ -15,3 +16,9 @@ const height40 = SizedBox(
 const height50 = SizedBox(
   height: 50,
 );
+
+
+
+class CustomTextStyle{
+  static final  titleStyle = GoogleFonts.prata();
+}
